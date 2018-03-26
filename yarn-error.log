@@ -1,0 +1,122 @@
+Arguments: 
+  /usr/local/Cellar/node/9.8.0/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js run test
+
+PATH: 
+  /Users/mfilimonov/.yarn/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/mfilimonov/.yarn/bin:/Users/mfilimonov/.antigen/bundles/robbyrussell/oh-my-zsh/lib:/Users/mfilimonov/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/git:/Users/mfilimonov/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/command-not-found:/Users/mfilimonov/.antigen/bundles/zsh-users/zsh-syntax-highlighting
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.8.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "generator-modern-express",
+    "version": "0.0.0",
+    "description": "",
+    "homepage": "https://github.com/Maxim-Filimonov/generator-modern-express",
+    "author": {
+      "name": "Maxim Filimonov",
+      "email": "tpaktopsp@gmail.com",
+      "url": ""
+    },
+    "files": [
+      "generators"
+    ],
+    "main": "generators/index.js",
+    "keywords": [
+      "express",
+      "webpack",
+      "vanillajs",
+      "es7",
+      "jest",
+      "yeoman-generator"
+    ],
+    "devDependencies": {
+      "yeoman-test": "^1.7.0",
+      "yeoman-assert": "^3.1.0",
+      "coveralls": "^2.13.1",
+      "nsp": "^2.6.3",
+      "eslint": "^4.1.0",
+      "prettier": "^1.7.0",
+      "husky": "^0.14.3",
+      "lint-staged": "^4.2.1",
+      "eslint-config-prettier": "^2.4.0",
+      "eslint-plugin-prettier": "^2.2.0",
+      "eslint-config-xo": "^0.18.2",
+      "jest": "^22.0.6"
+    },
+    "dependencies": {
+      "yeoman-generator": "^2.0.1",
+      "chalk": "^2.1.0",
+      "yosay": "^2.0.1"
+    },
+    "jest": {
+      "testEnvironment": "node"
+    },
+    "scripts": {
+      "prepublish": "nsp check",
+      "pretest": "eslint .",
+      "precommit": "lint-staged",
+      "test": "jest"
+    },
+    "lint-staged": {
+      "*.js": [
+        "eslint --fix",
+        "git add"
+      ],
+      "*.json": [
+        "prettier --write",
+        "git add"
+      ]
+    },
+    "eslintConfig": {
+      "extends": [
+        "xo",
+        "prettier"
+      ],
+      "env": {
+        "jest": true,
+        "node": true
+      },
+      "rules": {
+        "prettier/prettier": [
+          "error",
+          {
+            "singleQuote": true,
+            "printWidth": 90
+          }
+        ]
+      },
+      "plugins": [
+        "prettier"
+      ]
+    },
+    "repository": "Maxim-Filimonov/generator-modern-express",
+    "license": "Apache-2.0"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Command failed.
+  Exit code: 1
+  Command: sh
+  Arguments: -c jest
+  Directory: /Users/mfilimonov/src/generator-modern-express
+  Output:
+  
+      at ProcessTermError.MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
+      at new ProcessTermError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:30281:17)
+      at ChildProcess.emit (events.js:180:13)
+      at maybeClose (internal/child_process.js:936:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)
