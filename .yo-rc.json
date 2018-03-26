@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Maxim Filimonov",
+      "authorEmail": "tpaktopsp@gmail.com",
+      "authorUrl": ""
+    }
+  }
+}
