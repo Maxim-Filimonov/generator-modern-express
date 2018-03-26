@@ -5,12 +5,18 @@ const helpers = require('yeoman-test');
 
 describe('generator-modern-express:app', () => {
   beforeAll(() => {
-    return helpers
-      .run(path.join(__dirname, '../generators/app'))
-      .withPrompts({ someAnswer: true });
+    return helpers.run(path.join(__dirname, '../generators/app'));
   });
 
   it('creates files', () => {
-    assert.file(['dummyfile.txt']);
+    assert.file(['src/index.js', 'package.json', '.gitignore']);
+  });
+  it('install webpack', () => {
+    assert.fileContent('package.json', 'webpack');
+    assert.fileContent('package.json', 'webpack-cli');
+  });
+  it('installs jest and adds tasks', () => {
+    assert.fileContent('package.json', 'jest');
+    assert.fileContent('package.json', 'jest --watch');
   });
 });
