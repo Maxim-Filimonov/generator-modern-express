@@ -1,6 +1,10 @@
 # generator-modern-express [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > 
 
+# TODO
+- Add mongo(optional) setup for 3rd environment for jest
+- Add template for supertest example tests
+
 ## Installation
 
 First, install [Yeoman](http://yeoman.io) and generator-modern-express using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
