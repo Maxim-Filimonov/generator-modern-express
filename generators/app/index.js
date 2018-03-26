@@ -28,12 +28,13 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    this.fs.copy(this.templatePath('src/index.js'), this.destinationPath('src/index.js'));
     this.fs.copy(
       this.templatePath('_package.json'),
       this.destinationPath('package.json')
     );
     this.fs.copy(this.templatePath('_.gitignore'), this.destinationPath('.gitignore'));
+    this.fs.copy(this.templatePath('server'), this.destinationPath('server'));
+    this.fs.copy(this.templatePath('src'), this.destinationPath('src'));
   }
 
   install() {

@@ -19,4 +19,7 @@ describe('generator-modern-express:app', () => {
     assert.fileContent('package.json', 'jest');
     assert.fileContent('package.json', 'jest --watch');
   });
+  it('adds jest configs', () => {
+    assert.file(['src/jest.config.js', 'server/jest.config.js']);
+  });
 });
