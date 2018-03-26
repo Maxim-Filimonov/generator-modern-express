@@ -39,13 +39,22 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "testPathIgnorePatterns": ["/node_modules/", "/app/templates/"]
+    "testPathIgnorePatterns": ["/node_modules/", "/app/templates/"],
+    "collectCoverage": false,
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": -10
+      }
+    }
   },
   "scripts": {
     "prepublish": "nsp check",
     "pretest": "eslint .",
     "precommit": "lint-staged",
-    "test": "jest",
+    "test": "jest --coverage",
     "testDev": "jest --watch"
   },
   "lint-staged": {
