@@ -1,3 +1,10 @@
 module.exports = {
-    "extends": "airbnb-base"
+  extends: ["airbnb", "plugin:prettier/recommended"],
+  plugins: ["jest"],
+  env: {
+    "jest/globals": true
+  },
+  rules: {
+    "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }]
+  }
 };
