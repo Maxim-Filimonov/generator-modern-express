@@ -1,11 +1,10 @@
 # generator-modern-express [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 
->
-A yeoman generator that incorporates modern express, mongodb, and jest.
+> A yeoman generator that incorporates modern express, mongodb, and jest.
 
 # TODO
 
-* Add Eslint
+* ~~Add Eslint~~
 * Add babel for both client and server side
 * Add template for supertest example tests
 * Html webpack plugin
