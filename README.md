@@ -5,10 +5,9 @@ A yeoman generator that incorporates modern express, mongodb, and jest.
 
 # TODO
 
-* Add mongo(optional) setup for 3rd environment for jest
-* Add template for supertest example tests
 * Add Eslint
 * Add babel for both client and server side
+* Add template for supertest example tests
 * Html webpack plugin
 * Css webpack plugin
 * Webpack Dev Server
@@ -16,6 +15,7 @@ A yeoman generator that incorporates modern express, mongodb, and jest.
 
 ## One Day Later
 
+* Add mongo(optional) setup for 3rd environment for jest
 * React(optional) setup - it is own beast
 
 ## Installation
