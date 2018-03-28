@@ -28,13 +28,13 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    this.fs.copy(
-      this.templatePath('_package.json'),
-      this.destinationPath('package.json')
-    );
-    this.fs.copy(this.templatePath('_.gitignore'), this.destinationPath('.gitignore'));
-    this.fs.copy(this.templatePath('server'), this.destinationPath('server'));
-    this.fs.copy(this.templatePath('src'), this.destinationPath('src'));
+    const copy = (origin, destination) =>
+      this.fs.copy(this.templatePath(origin), this.destinationPath(destination));
+    copy('_package.json', 'package.json');
+    copy('_.gitignore', '.gitignore');
+    copy('server', 'server');
+    copy('src', 'src');
+    copy('.eslintrc.js', '.eslintrc.js');
   }
 
   install() {

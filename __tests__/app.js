@@ -22,4 +22,8 @@ describe('generator-modern-express:app', () => {
   it('adds jest configs', () => {
     assert.file(['src/jest.config.js', 'server/jest.config.js']);
   });
+  it('adds eslint config', () => {
+    assert.file(['.eslintrc.js']);
+    assert.fileContent('.eslintrc.js', 'airbnb');
+  });
 });
